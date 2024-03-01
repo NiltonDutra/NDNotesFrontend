@@ -35,8 +35,6 @@ export function New(){
 
     setLinks(prevState => [...prevState, newLink]);
     
- 
-    
     setNewLink("");
   }
 
@@ -59,7 +57,6 @@ export function New(){
     setTags(prevState => prevState.filter(tag => tag !== deleted));
 
   }
-
 
   function handleBack() {
     navigate(-1);
@@ -90,7 +87,6 @@ export function New(){
     alert("Note created successfully")
     navigate(-1);
   }
-
 
   return(
     <Container>
@@ -146,7 +142,6 @@ export function New(){
                 ))
               }
               
-
             <NoteItem
             isNew
             placeholder="New tag"

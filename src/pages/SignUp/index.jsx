@@ -26,7 +26,6 @@ export function SignUp() {
        return alert("Fill in all the fields!");
       }
 
-    
 api.post("/users", {name, email, password})
     .then(() => {
       alert("User successfully registered");
@@ -77,8 +76,6 @@ api.post("/users", {name, email, password})
       <Link to="/">Back to Login</Link>
 
       </Form>
-
-      
 
     </Container>
   );

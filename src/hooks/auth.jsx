@@ -51,13 +51,13 @@ function AuthProvider({ children }) {
       localStorage.setItem("@rocketnotes:user", JSON.stringify(user));
 
       setData({user, token: data.token});
-      alert("perfil atualizado")
+      alert("Updated profile")
 
     } catch (error) {
       if(error.response){
         alert(error.response.data.message);
       } else {
-        alert("não foi possível atualizar o perfil")
+        alert("Unable to update profile")
       }
     }
 

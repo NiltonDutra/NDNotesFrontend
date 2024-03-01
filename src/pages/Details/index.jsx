@@ -38,9 +38,6 @@ export function Details()  {
     fetchNote();
   })
 
-  
-
-
   return(
     <Container>
       <Header/>
@@ -49,13 +46,13 @@ export function Details()  {
             <Content>
             <ButtonText
             onClick={handleRemove}
-            title="excluir nota"/>
+            title="Delete note"/>
 
             <h1>{data.title}</h1>
             <p>{data.description}</p>
           {  
           data.links &&
-            <Section title="Links uteis">
+            <Section title="Useful links">
               <Links>
                 {
                   data.links.map(link => (
@@ -72,7 +69,7 @@ export function Details()  {
 
           {
             data.tags &&
-          <Section title="Marcadores">
+          <Section title="Tags">
             {
               data.tags.map(tag => (
               <Tag 
@@ -85,7 +82,7 @@ export function Details()  {
 
             <Button
             onClick = {handleBack}
-            title="Voltar"/>
+            title="Back"/>
             </Content>
           </main>
         }

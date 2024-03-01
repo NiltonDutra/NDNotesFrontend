@@ -90,7 +90,6 @@ export function Home() {
         ))   
         } 
         
-    
       </Menu>
 
       <Search>
