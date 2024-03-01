@@ -124,7 +124,7 @@ export function New(){
             }
             <NoteItem
             isNew
-            placeholder="Novo Link"
+            placeholder="New link"
             value={newLink}
             onChange={e => setNewLink(e.target.value)}
             onClick = {handleAddLink}
