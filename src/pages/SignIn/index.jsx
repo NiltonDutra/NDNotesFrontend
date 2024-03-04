@@ -25,7 +25,7 @@ const [password, setPassword] = useState("");
         <h1>NDNotes</h1>
         <p>Application to save and manage your useful links</p>
 
-        <h2>Begin session</h2>
+        <h2>Login here</h2>
 
           <Input
           placeholder="E-mail"
